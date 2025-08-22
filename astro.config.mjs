@@ -8,13 +8,11 @@ import alpinejs from "@astrojs/alpinejs";
 import solidJs from "@astrojs/solid-js"; // Added SolidJS integration
 import AstroPWA from "@vite-pwa/astro";
 import icon from "astro-icon";
-import vercel from "@astrojs/vercel";
 import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
   output: "server",
-  adapter: vercel(),
   site: "https://zandkhqastro.vercel.app",
 
   // Add Astro's built-in i18n configuration
