@@ -14,8 +14,8 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   output: "server",
-  site: "https://zandkhqastro.vercel.app",
   adapter: vercel(),
+  site: "https://zandkhqastro.vercel.app",
 
   // Add Astro's built-in i18n configuration
   i18n: {

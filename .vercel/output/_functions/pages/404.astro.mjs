@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_DBhXOAM-.mjs';
 import 'kleur/colors';
-import { g as getLangFromUrl, $ as $$Layout, a as getRelativeLocaleUrl } from '../chunks/Layout_BbuZyOrx.mjs';
+import { g as getLangFromUrl, $ as $$Layout, a as getRelativeLocaleUrl } from '../chunks/Layout_9SXmIIfp.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro = createAstro("https://zandkhqastro.vercel.app");

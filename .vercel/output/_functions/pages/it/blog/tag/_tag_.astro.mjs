@@ -1,10 +1,10 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, F as Fragment } from '../../../../chunks/astro/server_DBhXOAM-.mjs';
 import 'kleur/colors';
 import { g as getCollection } from '../../../../chunks/_astro_content_CRQiKwzI.mjs';
-import { $ as $$Posts } from '../../../../chunks/posts_eiDHe5S4.mjs';
+import { $ as $$Posts } from '../../../../chunks/posts_CGblboQI.mjs';
 import { $ as $$Container } from '../../../../chunks/container_BSpyUlRI.mjs';
 import { $ as $$Sectionhead } from '../../../../chunks/sectionhead_O_fYcIh3.mjs';
-import { g as getLangFromUrl, $ as $$Layout } from '../../../../chunks/Layout_BbuZyOrx.mjs';
+import { g as getLangFromUrl, $ as $$Layout } from '../../../../chunks/Layout_9SXmIIfp.mjs';
 export { renderers } from '../../../../renderers.mjs';
 
 const $$Astro = createAstro("https://zandkhqastro.vercel.app");
