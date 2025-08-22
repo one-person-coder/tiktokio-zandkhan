@@ -1,0 +1,51 @@
+import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead, F as Fragment } from '../chunks/astro/server_DBhXOAM-.mjs';
+import 'kleur/colors';
+import { $ as $$Container } from '../chunks/container_BSpyUlRI.mjs';
+import { $ as $$Sectionhead } from '../chunks/sectionhead_O_fYcIh3.mjs';
+import { g as getLangFromUrl, $ as $$Layout } from '../chunks/Layout_BbuZyOrx.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$Astro = createAstro("https://zandkhqastro.vercel.app");
+const $$Contact = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$Contact;
+  const safeUrl = Astro2.url || new URL("/", Astro2.site || "http://localhost:4321");
+  getLangFromUrl(safeUrl);
+  const contacts = [
+    {
+      title: "Marketing",
+      email: "test@yourcompany.com",
+      phone: "+1 (555) 555-5555"
+    },
+    {
+      title: "Human Resources",
+      email: "test@yourcompany.com",
+      phone: "+1 (555) 555-5555"
+    },
+    {
+      title: "Finance",
+      email: "test@yourcompany.com",
+      phone: "+1 (555) 555-5555"
+    },
+    {
+      title: "Research and Development",
+      email: "test@yourcompany.com",
+      phone: "+1 (555) 555-5555"
+    }
+  ];
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Contact" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Container", $$Container, {}, { "default": ($$result3) => renderTemplate` ${renderComponent($$result3, "Sectionhead", $$Sectionhead, {}, { "desc": ($$result4) => renderTemplate`${renderComponent($$result4, "Fragment", Fragment, { "slot": "desc" }, { "default": ($$result5) => renderTemplate`Get in Touch.` })}`, "title": ($$result4) => renderTemplate`${renderComponent($$result4, "Fragment", Fragment, { "slot": "title" }, { "default": ($$result5) => renderTemplate`Contact` })}` })} ${maybeRenderHead()}<div class="py-24 sm:py-32"> <div class="mx-auto max-w-7xl px-6 lg:px-8"> <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none"> <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3"> <div> <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Departments</h2> <p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">Reach Out to Our Dedicated Teams.</p> </div> <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8"> ${contacts.map((item) => renderTemplate`<div class="rounded-2xl bg-gray-50 dark:bg-stone-800 p-10"> <h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">${item.title}</h3> <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white"> <div> <dt class="sr-only">Email</dt> <dd> <a class="font-semibold text-stone-600 dark:text-white" href="mailto:collaborate@example.com"> ${item.email} </a> </dd> </div> <div class="mt-1"> <dt class="sr-only">Phone number</dt> <dd>${item.phone}</dd> </div> </dl> </div>`)} </div> </div> </div> </div> </div> ` })} ` })}`;
+}, "/home/hussain/zandkhqastro-main/src/pages/contact.astro", void 0);
+
+const $$file = "/home/hussain/zandkhqastro-main/src/pages/contact.astro";
+const $$url = "/contact";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	default: $$Contact,
+	file: $$file,
+	url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
